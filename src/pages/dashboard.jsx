@@ -3,7 +3,7 @@ import Layout from "../layout/main";
 function Dashboard() {
   return (
     <Layout>
-      <div className="flex flex-col justify-center gap-6 items-center bg-red-100 ">
+      <div className="flex flex-col justify-center gap-6 items-center bg-[#000000] p-6">
         {/* Row 1 */}
         <div className="flex w-full justify-center items-center gap-4">
           <div className="flex-row flex-1 justify-center shadow-xl items-center bg-[#3A3A5A] rounded-xl p-4">
@@ -28,8 +28,15 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 justify-center items-center bg-[#3A3A5A] p-4">
-            hiii
+          <div className="flex-row flex-1 justify-center items-center rounded-xl shadow-xl bg-[#3A3A5A] p-4">
+            <div className="flex text-white ps-2 text-2xl font-bold">
+              Wallet
+            </div>
+            <div className="flex">
+              <div>USD</div>
+              <div>USD</div>
+              <div>USD</div>
+            </div>
           </div>
         </div>
 

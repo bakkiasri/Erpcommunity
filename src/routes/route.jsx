@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../app.css";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../pages/dashboard";
 function Routers() {

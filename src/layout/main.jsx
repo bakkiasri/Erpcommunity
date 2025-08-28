@@ -1,7 +1,11 @@
 import Sidemenu from "./sidemenu";
+import BG from "../assets/BG.png";
 function Layout({ children }) {
   return (
-    <div className="flex h-screen">
+    <div
+      className="flex min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${BG})` }}
+    >
       {/* Sidebar */}
       <Sidemenu />
 

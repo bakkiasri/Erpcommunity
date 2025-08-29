@@ -1,5 +1,6 @@
 import Sidemenu from "./sidemenu";
 import BG from "../assets/BG.png";
+import Navbars from "./navbar";
 function Layout({ children }) {
   return (
     <div
@@ -7,11 +8,14 @@ function Layout({ children }) {
       style={{ backgroundImage: `url(${BG})` }}
     >
       {/* Sidebar */}
-      <Sidemenu />
+      <Sidemenu className="flex" />
 
       {/* Main content area */}
-      <div className="flex-1 flex flex-col overflow-auto">
-        <div className="p-0 flex-1 overflow-y-auto">{children} </div>
+      <div className="flex-1 flex flex-col overflow-auto ml-58">
+        <div className="p-0 flex-1 overflow-y-auto">
+          <Navbars />
+          {children}{" "}
+        </div>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ function Dashboard() {
 
   return (
     <Layout>
-      <div className="flex flex-col justify-center gap-4 items-center  p-6">
+      <div className="flex flex-col justify-center gap-4 items-center  p-4">
         {/* Row 1 */}
         <div className="flex w-full justify-center items-center gap-4">
           {/* Wallet */}

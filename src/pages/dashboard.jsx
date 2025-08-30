@@ -34,9 +34,9 @@ function Dashboard() {
     <Layout>
       <div className="flex flex-col justify-center gap-4 items-center  p-4">
         {/* Row 1 */}
-        <div className="flex w-full justify-center items-center gap-4">
+        <div className="flex  w-full justify-center items-center gap-4">
           {/* Wallet */}
-          <div className="flex-1 flex-row py-3 shadow-xl bg-[#3A3A5A] rounded-3xl">
+          <div className=" flex-row flex-1 py-3 shadow-xl bg-[#3A3A5A] rounded-3xl">
             <div className="flex text-white ps-7 text-xl font-semibold">
               Wallet
             </div>
@@ -65,17 +65,14 @@ function Dashboard() {
               Select Currency
             </h2>
 
-            <div className="relative flex px-2 items-center">
+            <div className="flex items-center justify-between gap-4 px-2">
               {/* Left Arrow */}
-              <button
-                onClick={prevSlide}
-                className="absolute -left-1 p-2 text-white"
-              >
+              <button onClick={prevSlide} className="p-2 text-white">
                 <ChevronLeft size={18} />
               </button>
 
               {/* Visible 3 currencies */}
-              <div className="flex gap-4 px-6 overflow-hidden w-full justify-center ">
+              <div className="flex gap-4 overflow-hidden justify-center flex-1">
                 {currencies.slice(current, current + 3).map((cur, idx) => (
                   <div
                     key={idx}
@@ -84,7 +81,7 @@ function Dashboard() {
                     <img
                       src={cur.code}
                       alt={cur.label}
-                      className="w-8 rounded-full h-8"
+                      className="w-8 h-8 rounded-full"
                     />
                     <span className="text-md font-bold">{cur.symbol}</span>
                     <span className="text-lg font-bold">{cur.label}</span>
@@ -93,10 +90,7 @@ function Dashboard() {
               </div>
 
               {/* Right Arrow */}
-              <button
-                onClick={nextSlide}
-                className="absolute -right-1 p-2 text-white"
-              >
+              <button onClick={nextSlide} className="p-2 text-white">
                 <ChevronRight size={18} />
               </button>
             </div>

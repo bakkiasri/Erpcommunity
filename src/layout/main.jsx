@@ -11,10 +11,10 @@ function Layout({ children }) {
       <Sidemenu className="flex" />
 
       {/* Main content area */}
-      <div className="flex-1 flex flex-col overflow-auto ml-58">
+      <div className="flex-1 flex flex-col overflow-auto ml-0 lg:ml-58">
         <div className="p-0 flex-1 overflow-y-auto">
           <Navbars />
-          {children}{" "}
+          {children}
         </div>
       </div>
     </div>
